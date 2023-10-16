@@ -38,22 +38,15 @@ export default defineConfig({
     // Path of spec files to run
     specPattern: [
       'cypress/e2e/smoke-tests/login.cy.ts',
-      // 'cypress/e2e/demo-tests/*.cy.ts',
       'cypress/e2e/*.cy.ts',
       'cypress/e2e/demo-tests/tests.cy.ts',
-      // 'cypress/e2e/smoke-tests/masterIR.cy.ts',
       'cypress/e2e/smoke-tests/loginFunctionality.cy.ts',
     ],
 
     // base url of the application
-    baseUrl: 'https://inspectionsmanagementsystem.com/uat',
+    baseUrl: 'https://q-ims.com/uat/ins_mg_ui',
   
 
-
-    // By default testIsolation value is true
-    // To manage the same state between one `it` block to another
-    // inside one describe block
-    // testIsolation: false,
   },
   
 

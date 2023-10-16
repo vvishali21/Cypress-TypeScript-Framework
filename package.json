@@ -1,0 +1,38 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf test-results/",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:headed": "cypress run --browser chrome --headed",
+    "cy:run:headless": "cypress run",
+    "cy:run:headed": "yarn clean && cypress run --headed",
+    "cy:chrome": "cypress run --browser chrome --headless",
+    "cy:firefox": "cypress run --browser firefox --headless",
+    "cy:test": "cypress run --headed --spec cypress/e2e/sample.cy.ts --browser chrome",
+    "cy:report": "cypress run --headed --spec cypress/e2e/smoke-tests/loginFunctionality.cy.ts --browser chrome",
+    "cy:dashboard": "cypress run --record --key 345c3833-26da-45e7-b2a5-5d96a8bb336a",
+    "report": "mochawesome-merge test-results/mochawesome/*.json > test-results/combined-report.json && marge test-results/combined-report.json --reportDir ./ --inline",
+    "test": "node_modules\\.bin\\cypress run",
+    "runtests": "npm run test --",
+    "cy:parallel": "cypress-parallel -d cypress/e2e/ -t 2 -s cy:test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress-parallel": "^0.12.0",
+    "typescript": "^5.0.3"
+  },
+  "devDependencies": {
+    "cypress": "^12.10.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.3.0",
+    "cypress-xpath": "^2.0.1",
+    "lambdatest-cypress-cli": "^3.0.12",
+    "mochawesome-merge": "^4.3.0"
+  }
+}

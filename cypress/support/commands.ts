@@ -43,14 +43,6 @@ Cypress.Commands.add('login', (email, password) => {
     cy.get("button[type='submit']").click();
  })
 
-//  Cypress.Commands.overwrite('type', (originalFn, element, text, options) => { 
-//     const clearedText = `{selectAll}{backspace}${text}`;
-//     options = {...options, log : false};
-//     return originalFn (element, clearedText, options)
-//  })
-
-
-
 
 Cypress.Commands.add('login' as any, (userName: string, password: string) => { 
     

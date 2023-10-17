@@ -23,7 +23,7 @@ export default defineConfig({
       "reportTitle": "Cypress Automation Result",
       "reportPageTitle": "Cypress Automation Result",
       "code": true,
-      "timestamp": true
+      "timestamp": false
     },
 
     // video reporting

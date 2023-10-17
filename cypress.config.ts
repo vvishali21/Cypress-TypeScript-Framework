@@ -44,8 +44,7 @@ export default defineConfig({
     ],
 
     // base url of the application
-    baseUrl: 'https://q-ims.com/uat/ins_mg_ui',
-  
+    baseUrl: 'https://q-ims.com/uat/ins_mg_ui',  
 
   },
   

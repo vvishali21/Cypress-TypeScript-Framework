@@ -88,6 +88,7 @@ class CreatePage {
         this.boq3.type('MASTER IR')
         this.boq4.type('Testing')
     }
+    
     documentStatus() {
         this.status.select('Approved')
         this.status1.select('Approved with Comments')

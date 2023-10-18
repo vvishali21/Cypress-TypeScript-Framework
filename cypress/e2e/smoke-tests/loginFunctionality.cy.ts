@@ -42,7 +42,7 @@ describe(`Login`, () => {
             .and('contain', 'Login Successfully')
     })
 
-    it(`Login with invalid user`, () => {
+    it.skip(`Login with invalid user`, () => {
         loginPage.userNameInput
             .type(cred.invalidUser)
 

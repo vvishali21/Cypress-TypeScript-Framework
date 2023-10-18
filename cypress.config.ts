@@ -10,42 +10,50 @@ export default defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      require('cypress-mochawesome-reporter/plugin')(on);
     },
 
     // Mochawesome html report 
-    reporter: 'mochawesome',
+    reporter: "cypress-mochawesome-reporter",
     reporterOptions: {
-      "reportDir": "test-results/mochawesome",
+      "reportDir": "reports/mochawesome",
+      "charts": true,
+      "embeddedScreenshots": true,
+      "inlineAssets": true,
       "overwrite": true,
       "html": true,
       "json": false,
-      "charts": true,
-      "reportTitle": "Cypress Automation Result",
+      "reportTitle": "HAL ERP",
       "reportPageTitle": "Cypress Automation Result",
       "code": true,
       "timestamp": false
     },
 
+
     // video reporting
     video: true,
     videoUploadOnPasses: false,
-    videosFolder: 'test-results/video',
+    videosFolder: 'reports/video',
+
 
     // screenshots reporting
     screenshotOnRunFailure: true,
-    screenshotsFolder: 'test-results/screenshots',
+    screenshotsFolder: 'reports/screenshots',
 
     // Path of spec files to run
     specPattern: [
       'cypress/e2e/smoke-tests/login.cy.ts',
+      // 'cypress/e2e/demo-tests/*.cy.ts',
       'cypress/e2e/*.cy.ts',
       'cypress/e2e/demo-tests/tests.cy.ts',
+      // 'cypress/e2e/smoke-tests/masterIR.cy.ts',
       'cypress/e2e/smoke-tests/loginFunctionality.cy.ts',
     ],
 
     // base url of the application
-    baseUrl: 'https://q-ims.com/uat',  
+    baseUrl: 'https://q-ims.com/uat',
 
   },
   
+
 });

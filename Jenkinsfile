@@ -31,7 +31,7 @@ pipeline {
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'reports/mochawesome', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
             emailext subject: "Pipeline Build Status: ${currentBuild.currentResult}", 
                      body: 'Please check the attached HTML report and Build log using pipeline.', 
-                     to: 'vishali.v@meteoriqs.com', 
+                     to: 'vishali.v@meteoriqs.com, marleen.peterson@meteoriqs.com', 
                      attachmentsPattern: 'reports/mochawesome/index.html', 
                      attachLog: true,
                      recipientProviders: [culprits()]

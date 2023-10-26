@@ -24,15 +24,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress-parallel": "^0.12.0",
-    "typescript": "^5.0.3"
+    "cypress-parallel": "^0.12.0"
   },
   "devDependencies": {
-    "cypress": "^12.10.0",
+    "cypress": "^12.17.4",
     "cypress-iframe": "^1.0.1",
-    "cypress-mochawesome-reporter": "^3.3.0",
+    "cypress-mochawesome-reporter": "^3.6.1",
     "cypress-xpath": "^2.0.1",
     "lambdatest-cypress-cli": "^3.0.12",
-    "mochawesome-merge": "^4.3.0"
+    "mochawesome-merge": "^4.3.0",
+    "typescript": "^5.2.2"
   }
 }

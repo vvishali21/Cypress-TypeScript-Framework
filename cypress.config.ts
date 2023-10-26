@@ -52,7 +52,13 @@ export default defineConfig({
 
     // base url of the application
     baseUrl: 'https://q-ims.com/uat',
+  
 
+
+    // By default testIsolation value is true
+    // To manage the same state between one `it` block to another
+    // inside one describe block
+    // testIsolation: false,
   },
   
 

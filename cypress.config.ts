@@ -4,6 +4,8 @@ export default defineConfig({
   projectId: 'ew8ys4',
   waitForAnimations: false,
   animationDistanceThreshold: 50,
+  defaultCommandTimeout: 10000,
+  pageLoadTimeout: 1000000,
   viewportWidth: 1700,
   viewportHeight: 900,
 

@@ -12,7 +12,6 @@ COPY ./cypress ./cypress
 
 # Install any dependencies your tests need
 
-RUN npm install cypress --save-dev
 
 RUN npm install --save-dev typescript
 

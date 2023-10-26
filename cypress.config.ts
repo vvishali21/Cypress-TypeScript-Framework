@@ -5,7 +5,6 @@ export default defineConfig({
   waitForAnimations: false,
   animationDistanceThreshold: 50,
   defaultCommandTimeout: 100000,
-  pageLoadTimeout: 1000000,
   viewportWidth: 1700,
   viewportHeight: 900,
 

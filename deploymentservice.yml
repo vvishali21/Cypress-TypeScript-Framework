@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cypress-deployment
+spec:
+  replicas: 3  # You can adjust the number of replicas as needed
+  selector:
+    matchLabels:
+      app: cypress
+  template:
+    metadata:
+      labels:
+        app: cypress
+    spec:
+      containers:
+        - name: cypress-container
+          image: my-cypress-image:1.1.0  # Replace with your Docker image name and tag
+          ports:
+            - containerPort: 8085  # Adjust the port as needed

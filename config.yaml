@@ -12,7 +12,7 @@ clusters:
     certificate-authority: C:\Users\meteoriQs_user3\.minikube\ca.crt
     extensions:
     - extension:
-        last-update: Fri, 27 Oct 2023 10:44:53 IST
+        last-update: Fri, 27 Oct 2023 13:08:15 IST
         provider: minikube.sigs.k8s.io
         version: v1.29.0
       name: cluster_info
@@ -31,7 +31,7 @@ contexts:
     cluster: minikube
     extensions:
     - extension:
-        last-update: Fri, 27 Oct 2023 10:44:53 IST
+        last-update: Fri, 27 Oct 2023 13:08:15 IST
         provider: minikube.sigs.k8s.io
         version: v1.29.0
       name: context_info
